@@ -5,6 +5,51 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title> HomeSpace Live Demo</title>
+  <style>
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      margin: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #007BFF, #0056b3);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover::after {
+      left: 100%;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+    }
+  </style>
+
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -112,6 +157,11 @@
               <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
                 <div class="content-header">
                   <span class="hero-label">
+                     <!-- BOTÕES  -->
+        <a href="https://go.hotmart.com/N102088665G?dp=1" class="btn">COMPRAR PROJETO</a>
+        <a href="https://kiamyneto.netlify.app/portfolio" class="btn">PÁGINA INICIAL</a>
+                    <hr>
+
                     <i class="bi bi-house-heart"></i>
                     Dream Homes Await
                   </span>
